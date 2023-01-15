@@ -20,6 +20,13 @@ public class DemoApplication {
 
 		StringPallindrome sp = run.getBean(StringPallindrome.class);
 		sp.checkPallidrome("Katak");
+
+		Animal animal = run.getBean(Animal.class);
+		animal.eat();
+
+		// Object bean = run.getBean("Test");
+		// Test t = (Test) bean;
+		
 	}
 
 }
